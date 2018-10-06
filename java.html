@@ -756,7 +756,7 @@ CloudObject obj = new CloudObject("Student");
 obj.set("name", "John Smith");
 Date date = new Date(2015, 12, 25);
 expire = date.getTime()+1000;
-obj.setExpires(expires); //Set the expire time for object Student
+obj.setExpires(expire); //Set the expire time for object Student
 </span></span></span></code>
                 </div><!-- method-example -->
             </div> <!-- method-section -->
@@ -2813,7 +2813,7 @@ cs.search(callbackObj);</span></span></code>
             <div class="method-description">
               <h1>ACL</h1>
               <p>
-              Each <code>CloudObject</code> namespace has security option by default. By default every object can be read and modified by anyone so for each object change the security option as desidred.
+              Each <code>CloudObject</code> namespace has security option by default. By default every object can be read and modified by anyone so for each object change the security option as desired.
               For any object, you can specify which users/roles are allowed to read the object, and which users/roles are allowed to modify an object. To support this type of security, each object has an access control list, implemented by the <code>ACL</code> class.
               </p>
               <p>
