@@ -911,7 +911,7 @@ CB.CloudObject.off('Student', //name of the table
 var obj = new CB.CloudObject('Student');
 obj.set('name', 'John Smith');
 expire=new Date().getTime()+1000; //increase the expiration time by 1 second from current time
-obj.expires = expires; //Set the expire time for object Student
+obj.expires = expire; //Set the expire time for object Student
 </span></span></span></code>
               </div>
               <!-- method-example -->
@@ -6762,7 +6762,7 @@ table.updateColumn(name);
                         <h1>CB.ACL</h1>
                         <p>
                           Each <code>CloudObject</code> namespace has security option by default. By default every object
-                          can be read and modified by anyone so for each object change the security option as desidred. For
+                          can be read and modified by anyone so for each object, change the security option as desired. For
                           any object, you can specify which users/roles are allowed to read the object, and which users/roles
                           are allowed to modify an object. To support this type of security, each object has an access control
                           list, implemented by the <code>CB.ACL</code> class.
